@@ -10,6 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class Assert02 {
 
@@ -27,20 +28,21 @@ public class Assert02 {
 		
 	@Test
 	public void testApp(){
-		
+		SoftAssert softAssert= new SoftAssert();
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("tomsmith");
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("SuperSecretPassword!");
 		System.out.println("Signing in");
 		driver.findElement(By.xpath("//i[contains(text(),'Login')]")).click();			
 		String msg = driver.findElement(By.xpath("//div[@id='flash']")).getText();		
-		Assert.assertEquals(msg.contains("You logged into a secure area!"), true);
+		softAssert.assertEquals(msg.contains("You logged into a secure area!!!"), true);
 		System.out.println("Sign In was successful");		
 		
 		driver.findElement(By.xpath("//i[contains(text(),'Logout')]")).click();
 		String msglogout = driver.findElement(By.xpath("//div[@id='flash']")).getText();
 		System.out.println("Signing out");
-		Assert.assertEquals(msglogout.contains("You logged out of the secure area!"), true);	
-		System.out.println("Sign out was successful");		
+		softAssert.assertEquals(msglogout.contains("You logged out of the secure area!!!"), true);	
+		System.out.println("Sign out was successful");	
+		softAssert.assertAll();
 	}
 			
 	

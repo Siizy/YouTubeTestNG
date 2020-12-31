@@ -24,7 +24,7 @@ public class Assert01 {
 		System.out.println("Hey I am below first assertion");
 		Assert.assertTrue(firstName.equals("Chandan2"));
 		Assert.assertFalse(firstName.equals("Gupta"));
-		//Assert.fail();
+		Assert.fail();
 	}
 		
   }
