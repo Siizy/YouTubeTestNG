@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="asserts.Assert02">
+      <class name="parallel.ParallelClass01">
         <methods>
-          <include name="testApp"/>
-          <include name="setUp"/>
-          <include name="closeChrome"/>
+          <include name="test01"/>
         </methods>
-      </class> <!-- asserts.Assert02 -->
+      </class> <!-- parallel.ParallelClass01 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
