@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="crossbrowser.Class01">
+      <class name="listener.Demo">
         <methods>
-          <include name="tearDown"/>
-          <include name="init"/>
-          <include name="launchGoogle"/>
+          <include name="testMethod01"/>
+          <include name="testMethod02"/>
         </methods>
-      </class> <!-- crossbrowser.Class01 -->
+      </class> <!-- listener.Demo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

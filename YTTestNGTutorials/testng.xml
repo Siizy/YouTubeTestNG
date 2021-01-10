@@ -7,11 +7,5 @@
       <class name="crossbrowser.Class01"/>
     </classes>
   </test> <!-- Test -->
-  
-  <test name="Test02">
-  <parameter name="browser" value="IE" />
-    <classes>
-      <class name="crossbrowser.Class01"/>
-    </classes>
-  </test> <!-- Test --> 
+
 </suite> <!-- Suite -->
