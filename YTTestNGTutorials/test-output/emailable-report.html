@@ -9,22 +9,24 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test01</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">179</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test02</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">30</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">209</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Suite (1)</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">32</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite (0)</th></tr>
+<tr class="stripe"><td><a href="#t1">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">194</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">226</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test01 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">listener.Demo</td><td><a href="#m0">testMethod01</a></td><td rowspan="1">1610140912320</td><td rowspan="1">26</td></tr><tr><th colspan="4">Test01 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">listener.Demo</td><td><a href="#m1">testMethod02</a></td><td rowspan="1">1610140912359</td><td rowspan="1">3</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test02 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">listener.Demo2</td><td><a href="#m2">testMethod03</a></td><td rowspan="1">1610140912639</td><td rowspan="1">10</td></tr><tr><th colspan="4">Test02 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">listener.Demo2</td><td><a href="#m3">testMethod04</a></td><td rowspan="1">1610140912656</td><td rowspan="1">5</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody><tr><th colspan="4">Suite (1)</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">listenerSmoke.Demo_smoke</td><td><a href="#m0">testMethod01_smoke</a></td><td rowspan="1">1610432094984</td><td rowspan="1">3</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">listenerSmoke.Demo_smoke</td><td><a href="#m1">testMethod02_smoke</a></td><td rowspan="1">1610432095003</td><td rowspan="1">3</td></tr></tbody>
+<tbody><tr><th colspan="4">Suite (0)</th></tr></tbody><tbody id="t1"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">listenerRegression.Demo_reg</td><td><a href="#m2">testMethod01_reg</a></td><td rowspan="1">1610432094635</td><td rowspan="1">35</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">listenerRegression.Demo_reg</td><td><a href="#m3">testMethod02_reg</a></td><td rowspan="1">1610432094691</td><td rowspan="1">16</td></tr></tbody>
 </table>
-<h2>Test01</h2><h3 id="m0">listener.Demo#testMethod01</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [3] but found [2]
-	at listener.Demo.testMethod01(Demo.java:11)
+<h2>Test</h2><h3 id="m0">listenerSmoke.Demo_smoke#testMethod01_smoke</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [3] but found [2]
+	at listenerSmoke.Demo_smoke.testMethod01_smoke(Demo_smoke.java:11)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">listener.Demo#testMethod02</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test02</h2><h3 id="m2">listener.Demo2#testMethod03</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [3] but found [2]
-	at listener.Demo2.testMethod03(Demo2.java:11)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">listenerSmoke.Demo_smoke#testMethod02_smoke</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m2">listenerRegression.Demo_reg#testMethod01_reg</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [3] but found [2]
+	at listenerRegression.Demo_reg.testMethod01_reg(Demo_reg.java:11)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">listener.Demo2#testMethod04</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">listenerRegression.Demo_reg#testMethod02_reg</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
